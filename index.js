@@ -42,3 +42,11 @@ if (!isNaN(dogAge)) {
     alert("Please input data by number");
 }
 
+// Increment & decrement
+let x = 10;
+let y = 30;
+
+x += y;
+
+x++ ;
+x-- ;
