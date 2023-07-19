@@ -29,3 +29,16 @@ let combineName = upperCaseFirstChar + restOfName.toLowerCase();
 
 alert(`Hello, ${combineName}`);
 
+// Number data implementation
+
+// Dog age to human age formula
+
+let dogAge = prompt("Input Dog Age here...");
+
+if (!isNaN(dogAge)) {
+    humanAge = (dogAge - 2) * 4 + 21;
+    alert(`Your dog age in human age is ${humanAge}`);
+} else {
+    alert("Please input data by number");
+}
+
