@@ -54,7 +54,7 @@ x-- ;
 // Function
 function getMilk(money) {   
     var bottles = 5 / 1.5;
-    bottles = Math.round(bottles);
+    bottles = Math.floor(bottles);
     
       console.log("leaveHouse");
       console.log("moveRight");
@@ -78,3 +78,23 @@ function getMilk(money) {
     }
     
     getMilk(5);
+
+// Life in Weeks Coding Exercise
+function lifeInWeeks(age) {
+    
+    /************Don't change the code above************/    
+        
+        //Write your code here.
+        const ageLeft = 90 - age;
+        
+        const x = ageLeft * 365;
+        const y = ageLeft * 52;
+        const z = ageLeft * 12;
+    
+    
+        console.log(`You have ${x} days, ${y} weeks, and ${z} months left.`);
+        
+    /*************Don't change the code below**********/
+    }
+    
+    lifeInWeeks(56);
