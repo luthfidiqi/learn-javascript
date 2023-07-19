@@ -50,3 +50,31 @@ x += y;
 
 x++ ;
 x-- ;
+
+// Function
+function getMilk(money) {   
+    var bottles = 5 / 1.5;
+    bottles = Math.round(bottles);
+    
+      console.log("leaveHouse");
+      console.log("moveRight");
+      console.log("moveRight");
+      console.log("moveUp");
+      console.log("moveUp");
+      console.log("moveUp");
+      console.log("moveUp");
+      console.log("moveRight");
+      console.log("moveRight");
+      console.log("buyMilk " + bottles);
+      console.log("moveLeft");
+      console.log("moveLeft");
+      console.log("moveDown");
+      console.log("moveDown");
+      console.log("moveDown");
+      console.log("moveDown");
+      console.log("moveLeft");
+      console.log("moveLeft");
+      console.log("enterHouse");
+    }
+    
+    getMilk(5);
