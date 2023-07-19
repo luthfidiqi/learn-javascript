@@ -52,49 +52,86 @@ x++ ;
 x-- ;
 
 // Function
+// Phase 1
 function getMilk(money) {   
     var bottles = 5 / 1.5;
     bottles = Math.floor(bottles);
     
-      console.log("leaveHouse");
-      console.log("moveRight");
-      console.log("moveRight");
-      console.log("moveUp");
-      console.log("moveUp");
-      console.log("moveUp");
-      console.log("moveUp");
-      console.log("moveRight");
-      console.log("moveRight");
-      console.log("buyMilk " + bottles);
-      console.log("moveLeft");
-      console.log("moveLeft");
-      console.log("moveDown");
-      console.log("moveDown");
-      console.log("moveDown");
-      console.log("moveDown");
-      console.log("moveLeft");
-      console.log("moveLeft");
-      console.log("enterHouse");
+    console.log("leaveHouse");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("buyMilk " + bottles);
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("enterHouse");
     }
     
     getMilk(5);
 
-// Life in Weeks Coding Exercise
+// Phase 2 - Life in Weeks Coding Exercise
 function lifeInWeeks(age) {
-    
-    /************Don't change the code above************/    
-        
-        //Write your code here.
+
         const ageLeft = 90 - age;
         
         const x = ageLeft * 365;
         const y = ageLeft * 52;
         const z = ageLeft * 12;
     
-    
         console.log(`You have ${x} days, ${y} weeks, and ${z} months left.`);
-        
-    /*************Don't change the code below**********/
     }
     
-    lifeInWeeks(56);
+lifeInWeeks(56);
+
+// Phase 3
+function getMilk(money) {   
+    
+    console.log("leaveHouse");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveRight");
+    console.log("moveRight");
+    
+    console.log("buyMilk " + calcBottle(money, 1.5));
+    
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("enterHouse");
+
+    return calcChange(money, 1.5);
+}
+
+function calcBottle(startingMoney, costPerBottle) {
+    var numberOfBottles = Math.floor(startingMoney / costPerBottle);
+
+    return numberOfBottles;
+}
+
+function calcChange(startingMoney, costPerBottle) {
+    var change = startingMoney % costPerBottle;
+
+    return change;
+}
+
+console.log(`Here is your change : ${getMilk(4)}$`);
