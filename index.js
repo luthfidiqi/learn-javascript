@@ -191,3 +191,40 @@ function isLeap(year) {
     }
 
 }
+
+// Arrays
+var guestlist = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
+
+let guestName = prompt("Input your name:");
+
+if (guestlist.includes(guestName)) {
+    alert("Welcome! You are invited!");
+} else {
+    alert("Sorry... You are not invited.");
+}
+
+// FizzBuzz
+var output = [];
+var increaseNumber = 1;
+
+function fizzBuzz() {
+    if (increaseNumber % 3 === 0 && increaseNumber % 5 === 0) {
+        output.push("FizzBuzz"); 
+    } else if (increaseNumber % 3 === 0) {
+        output.push("Fizz");
+    } else if (increaseNumber % 5 === 0) {
+        output.push("Buzz");
+    } else {
+        output.push(increaseNumber);
+    }
+    increaseNumber++;
+    console.log(output);
+}
+
+// test
+function whosPaying(names) {
+    var number0fPeople = names.length;
+    var randomPersonPosition = Math.floor(Math.random() * number0fPeople);
+    var randomPerson = names[randomPersonPosition];
+    return randomPerson + " is going to buy lunch today!"
+}
