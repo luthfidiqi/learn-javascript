@@ -135,3 +135,23 @@ function calcChange(startingMoney, costPerBottle) {
 }
 
 console.log(`Here is your change : ${getMilk(4)}$`);
+
+// Test - BMI Calculator
+function bmiCalculator(weight, height) {
+    bmi = weight / Math.pow(height, 2);
+    return bmi;
+}
+
+bmiCalculator(65, 1.8); 
+
+// BMI Calculator if else
+function bmiCalculator (weight, height) {
+    let bmi = weight / Math.pow(height, 2);
+    if (bmi < 18.5) {
+        return `Your BMI is ${bmi}, so you are underweight.`;
+    } else if (bmi <= 24.9) {
+        return `Your BMI is ${bmi}, so you have a normal weight.`;
+    } else {
+        return `Your BMI is ${bmi}, so you are overweight.`;
+    }
+}
