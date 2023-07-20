@@ -155,3 +155,18 @@ function bmiCalculator (weight, height) {
         return `Your BMI is ${bmi}, so you are overweight.`;
     }
 }
+
+// Love Calculator
+name = prompt("Masukan Namamu :");
+crush = prompt("Masukan Nama pasanganmu :");
+
+var loveScore = Math.random() * 100;
+loveScore = Math.round(loveScore) + 1;
+
+if(loveScore > 80) {
+    alert(`Precentage of love between ${name} & ${crush} : ${loveScore}% (Cieee... Sikat bos!)`);
+} else if(loveScore > 60 && loveScore <= 80) {
+    alert(`Precentage of love between ${name} & ${crush} : ${loveScore}% (Hubunganmu akan diterpa banjir)`);
+} else {
+    alert(`Precentage of love between ${name} & ${crush} : ${loveScore}% (Lu punya uang lu punya cinta. Jika gapunya dukun solusinya)`);
+}
