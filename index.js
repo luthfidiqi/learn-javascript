@@ -170,3 +170,24 @@ if(loveScore > 80) {
 } else {
     alert(`Precentage of love between ${name} & ${crush} : ${loveScore}% (Lu punya uang lu punya cinta. Jika gapunya dukun solusinya)`);
 }
+
+
+
+// Leap Year
+function isLeap(year) { 
+    //Write your code here.    
+    if(year % 4 === 0) {
+        if(year % 100 === 0) {
+            if(year % 400 === 0) {
+                console.log("Leap year.")
+            }else {
+                console.log("Not leap year.")
+            }
+        } else {
+            console.log("Leap year.");
+        }
+    } else {
+        console.log("Not leap year.")
+    }
+
+}
